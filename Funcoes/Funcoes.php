@@ -30,10 +30,11 @@ class Funcoes{
     public function retornaBase(){
         $base = "http://" . $_SERVER['SERVER_NAME']."/";
         if(strpos($base, 'localhost')){
-            $base = 'http://localhost/site%20cafe%20padre%20victor/';
+            $base = 'http://localhost/padre-victor/';
         }
         return $base;
     }
+    
 
     public function urlAtual(){
         $dominio = $_SERVER['HTTP_HOST'];

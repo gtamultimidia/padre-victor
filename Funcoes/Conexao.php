@@ -10,7 +10,7 @@ abstract class Conexao {
 
         try {
             if (!isset(self::$conexao)) :
-                self::$conexao = new pdo("mysql:host=162.241.3.24;dbname=gtamulti_padre_victor", "gtamulti_cafep", "pN*(]HyvZWh#");
+                self::$conexao = new PDO("mysql:host=localhost;dbname=cafepv", "root", "");
                 self::$conexao->exec("set names utf8");
                 self::$conexao->exec("SET character_set_connection=utf8");
                 self::$conexao->exec("SET character_set_client=utf8");
@@ -18,7 +18,7 @@ abstract class Conexao {
                 self::$conexao->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             endif;
         } catch (PDOException $e) {
-            echo "Erro ao conectar ao banco" . $e->getMessage();
+            echo "Erro ao conectar ao banco: " . $e->getMessage();
         }
         return self::$conexao;
     }
