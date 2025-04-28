@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+  <head>
+
+	<title>Alternar elementos HTML com jQuery Toggle</title>
+
+	<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+
+	<meta name="description" content="Alternar elementos HTML com jQuery Toggle" />
+	<meta name="keywords" content="toggle, jQuery, Plugin, JavaScript Library, snippet, jQuery-Plugin, JavaScript, Ajax, Css" />
+	<meta http-equiv="keywords" content="toggle, jQuery, Plugin, JavaScript Library, snippet, jQuery-Plugin, JavaScript, Ajax, Css" />
+
+
+	<meta name="robots" content="index,follow" />
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<script type="text/javascript" src="jquery-latest.pack.js"></script>
+	<script type="text/javascript" src="jquery.toggleElements.pack.js"></script>
+	<link rel="stylesheet" type="text/css" href="toggleElements.css" />
+	<link rel="stylesheet" type="text/css" href="toggleElements2.css" />
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('div.toggler-1').toggleElements( );
+		$('ul.toggler-2').toggleElements( );
+		$('img.toggler-3').toggleElements( { fxAnimation:'show', fxSpeed:'slow', className:'toggler2' } );
+		$('ul.toggler-4').toggleElements( { fxAnimation:'show', fxSpeed:'slow', className:'toggler2' } );
+		$('div.toggler-5').toggleElements( { fxAnimation:'show', fxSpeed:'slow', className:'toggler2' } );
+		$('ul.toggler-6').toggleElements( { fxAnimation:'fade', fxSpeed:1000, className:'toggler' } );
+		$('div.toggler-7').toggleElements( { fxAnimation:'fade', fxSpeed:1000, className:'toggler' } );
+		$('ul.toggler-8').toggleElements( { fxAnimation:'show', fxSpeed:'fast', className:'none' } );
+		$('fieldset.toggler-9').toggleElements( { fxAnimation:'show', fxSpeed:1000, className:'toggler', onClick:doOnClick, onHide:doOnHide, onShow:doOnShow } );
+		$('div.toggler-10').toggleElements( );
+	});
+	
+function doOnClick() {
+	alert('callback: onClick');
+}
+function doOnHide() {
+	alert('callback: onHide');
+}
+function doOnShow() {
+	alert('callback: onShow');
+}
+</script>
+
+
+
+  </head>
+
+  <body>
+
+	<div id="page">
+  <div class="examples">
+
+			<h2>E x e m p l o s:</h2>
+			
+			<div class="toggler-1" title="Exemplo 1: div com texto e imagem">
+				<p>
+				<img src="image.jpg" style="float:left;margin-right:30px;margin-bottom:10px;" alt="" />
+				Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vestibulum erat. Sed rutrum. Nam aliquam, neque id molestie malesuada, tellus odio facilisis augue, in vulputate massa neque elementum risus. Aenean pretium, diam quis condimentum imperdiet, est augue pretium quam, id varius ligula justo ultricies ante. In feugiat. Nulla magna. Nullam non metus at dui aliquet blandit. Nunc mi. Aenean mauris tellus, faucibus non, semper ac, facilisis non, orci. Proin cursus nibh in tellus. Fusce posuere nisi eu ligula. Morbi volutpat est a diam lobortis consectetuer. Donec placerat, eros vel cursus ornare, leo mi aliquet velit, quis aliquet ipsum augue eget augue. Donec ligula sem, eleifend at, mattis et, facilisis at, augue.
+				</p>
+			</div>
+
+			<ul class="toggler-2" title="Exemplo 2: lista não ordenada">
+				<li>jQuery Magazine</li>
+				<li>PHP Magazine</li>
+			</ul>
+
+			
+
+			<img src="image.jpg" alt="" class="toggler-3" title="Exemplo 3: uma única imagem com classe diferente" />
+
+			<ul class="toggler-4" title="Exemplo 4: lista não ordenada com classe diferente">
+				<li>Google</li>
+				<li>AltaVista</li>
+				<li>Fireball</li>
+				<li>Google</li>
+				<li>AltaVista</li>
+				<li>Fireball</li>
+			</ul>
+
+			<div class="toggler-5" title="Exemplo 5: div com a classe diferentes e subs ;-)">
+				<p>
+				<img src="image.jpg" style="float:left;margin-right:30px;margin-bottom:10px;" alt="" />
+				Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vestibulum erat. Sed rutrum. Nam aliquam, neque id molestie malesuada, tellus odio facilisis augue, in vulputate massa neque elementum risus. Aenean pretium, diam quis condimentum imperdiet, est augue pretium quam, id varius ligula justo ultricies ante. In feugiat. Nulla magna. Nullam non metus at dui aliquet blandit. Nunc mi. Aenean mauris tellus, faucibus non, semper ac, facilisis non, orci. Proin cursus nibh in tellus. Fusce posuere nisi eu ligula. Morbi volutpat est a diam lobortis consectetuer. Donec placerat, eros vel cursus ornare, leo mi aliquet velit, quis aliquet ipsum augue eget augue. Donec ligula sem, eleifend at, mattis et, facilisis at, augue.
+				</p>
+				<ul class="toggler-6" title="Exemplo 6: lista não ordenada">
+					<li>Google</li>
+					<li>AltaVista</li>
+					<li>Fireball</li>
+				</ul>
+				<div class="toggler-7" title="Exemplo 7: lista não ordenada com sub">
+					<ul>
+						<li>Google</li>
+						<li>AltaVista</li>
+						<li>
+							<ul class="toggler-8" title="Exemplo 8: lista não ordenada">
+								<li>Google</li>
+								<li>AltaVista</li>
+								<li>Fireball</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<fieldset class="toggler-9" title="Exemplo 9: fieldset, com retornos">
+				<legend>Lorem Ipsum</legend>
+				<label for="foo"><input id="foo" name="foo" /></label>
+				<input type="submit" value="submit" />
+			</fieldset>
+
+			<div class="toggler-10 opened" title="Exemplo 10: classe adicional 'opened'">
+				<p>
+				<img src="image.jpg" style="float:left;margin-right:30px;margin-bottom:10px;" alt="" />
+				Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vestibulum erat. Sed rutrum. Nam aliquam, neque id molestie malesuada, tellus odio facilisis augue, in vulputate massa neque elementum risus. Aenean pretium, diam quis condimentum imperdiet, est augue pretium quam, id varius ligula justo ultricies ante. In feugiat. Nulla magna. Nullam non metus at dui aliquet blandit. Nunc mi. Aenean mauris tellus, faucibus non, semper ac, facilisis non, orci. Proin cursus nibh in tellus. Fusce posuere nisi eu ligula. Morbi volutpat est a diam lobortis consectetuer. Donec placerat, eros vel cursus ornare, leo mi aliquet velit, quis aliquet ipsum augue eget augue. Donec ligula sem, eleifend at, mattis et, facilisis at, augue.
+				</p>
+			</div>
+
+			
+		</div>
+		
+		</div>
+
+    <!--[if lt IE 5.5]>
+	<div class="toocool"><h1>Atualize seu velho IE ;-)</h1></div>
+<![endif]-->
+
+
+
+  </body>
+</html>

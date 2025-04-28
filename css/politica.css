@@ -1,0 +1,144 @@
+/*POLÍTICA DE PRIVACIDADE*/
+
+.politicaPrivacidade{
+    padding: 30px 0;
+    color: #a10004;
+    text-align: justify;
+}
+
+.politicaPrivacidade h2, .politicaPrivacidade h1{
+    margin: 0;
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
+.box-cookies.hide, .btnPoliticaPrivacidade.hide {
+    display: none !important;
+}
+
+.box-cookies {
+    position: fixed;
+    background: rgba(0, 0, 0, .9);
+    width: 100%;
+    z-index: 9999;
+    bottom: 0;
+    border-top: 4px solid white;
+}
+
+.box-cookies .max-cookie{
+    width: 1360px;
+    max-width: 96%;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.box-cookies .btn-cookies {
+    text-align: center;
+    padding: 25px;
+    color: #fff;
+    font-size: 18px;
+}
+
+.box-cookies .msg-cookies{
+    margin: 0;
+    padding-right: 25px;
+    line-height: 1.4;
+    color: #fff;
+    font-size: 18px;
+}
+
+.box-cookies .btn-cookies {
+    border: 4px solid #1e88e5;
+    background: #1e88e5;
+    cursor: pointer;
+    align-self: normal;
+    justify-content: flex-end;
+}
+
+.box-cookies .btn-cookies:hover {
+    background: white;
+    color: #1e88e5;
+}
+
+.btn-saiba-mais {
+    color: white;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.btn-saiba-mais:hover {
+    color: #83c5ff;
+}
+
+.opecacao-cookie{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnPoliticaPrivacidade{
+    display: block;
+    width: 200px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    background-color: rgb(0 0 0 / 59%);
+    left: 100px;
+    padding: 5px;
+    font-size: 14px;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    z-index: 9999;
+}
+
+.btnPoliticaPrivacidade:hover{
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+}
+
+@media screen and (max-width: 1410px) {
+    .box-cookies .msg-cookies, .box-cookies .btn-cookies {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .box-cookies .msg-cookies{
+        text-align: left;
+    }
+    .opecacao-cookie {
+        min-width: 300px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .box-cookies .btn-cookies {
+        padding: 18px;
+    }
+
+    .btnPoliticaPrivacidade{
+        left: 10px;
+    }
+}
+
+@media screen and (max-width: 776px) {
+    .box-cookies .msg-cookies, .box-cookies .btn-cookies, .btn-saiba-mais{
+        font-size: 15px;
+    }
+    .box-cookies .max-cookie {
+        flex-direction: column;
+    }
+    .box-cookies .msg-cookies{
+        text-align: center;
+    }
+    .box-cookies .msg-cookies{
+        padding: 0;
+        margin-bottom: 10px;
+    }
+}

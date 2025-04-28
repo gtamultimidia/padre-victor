@@ -1,0 +1,659 @@
+@font-face {
+    font-family: 'gotham-medium';
+    src: url('css/fontes/gotham-medium.eot');
+    src: url('css/fontes/gotham-medium.eot?#iefix') format('embedded-opentype'),
+         url('css/fontes/gotham-medium.woff2') format('woff2'),
+         url('css/fontes/gotham-medium.woff') format('woff'),
+         url('css/fontes/gotham-medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gotham-bold';
+    src: url('css/fontes/gotham-bold.eot');
+    src: url('css/fontes/gotham-bold.eot?#iefix') format('embedded-opentype'),
+         url('css/fontes/gotham-bold.woff2') format('woff2'),
+         url('css/fontes/gotham-bold.woff') format('woff'),
+         url('css/fontes/gotham-bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gotham-book';
+    src: url('css/fontes/gotham-book.eot');
+    src: url('css/fontes/gotham-book.eot?#iefix') format('embedded-opentype'),
+         url('css/fontes/gotham-book.woff2') format('woff2'),
+         url('css/fontes/gotham-book.woff') format('woff'),
+         url('css/fontes/gotham-book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    
+    font-family: 'gotham-medium';
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+.maxPg{
+    width: 98%;
+    max-width: 1836px;
+    margin: 0 auto;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+h1, h2, h3, h4, h5, b{
+    font-weight: normal;
+}
+
+/*HEADER*/
+
+header{
+    background-color: transparent;
+    padding: 20px 0;
+    position: absolute;
+    z-index: 2;
+    top: 0;left: 0;
+    width: 100%;
+}
+
+header .maxPg{
+    position: relative;
+}
+
+.menuRetratil{display:none}
+.menuDesktop{display:block}
+
+.menuDesktop ul{
+    padding: 0;
+    display: flex;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    transform: translateX(24%);
+    width: 780px;
+    max-width: 100%;
+    margin-top: 20px;
+}
+
+.menuDesktop ul li{
+    list-style-type: none;
+}
+
+.menuDesktop ul li a, .menuDesktop .divisoria{
+    display: block;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.logo{
+    position: absolute;
+    right: 10%;
+}
+
+/*BANNER*/
+
+.banner{
+    position: relative;
+}
+
+.banner img{
+    display: block;
+}
+
+.banner h1{
+    position: absolute;
+    top: 64%;
+    right: 0%;
+    left: 0;
+    margin: 0 auto;
+    transform: translate(65%,-64%);
+    color: white;
+    text-transform: uppercase;
+    line-height: 1;
+    font-size: 36px;
+    width: 588px;
+    text-align: left;
+}
+
+.banner span{
+    font-size: 117px;
+    letter-spacing: -9px;
+}
+
+.banner h1 b{
+    color: #cc2533;
+}
+
+/*QUEM SOMOS*/
+
+.textoQuemSomos h2{
+    text-align: center;
+    width: 100%;
+    font-size: 40px;
+    margin-top: 0px;
+}
+
+.textoQuemSomos{
+    position: absolute;
+    top: 62%;
+    right: 0;
+    left: initial;
+    margin: 0 auto;
+    transform: translateY(-64%);
+    color: white;
+    line-height: 1;
+    font-size: 36px;
+    width: 47%;
+    text-align: left;
+    opacity: 0;
+    -webkit-transition: All 1s ease;
+    -moz-transition: All 1s ease;
+    -o-transition: All 1s ease;
+    padding: 0 75px;
+}
+
+.textoQuemSomos p{
+    font-family: 'gotham-book';
+    text-align: justify;
+    font-size: 16px;
+    margin: 0 auto 20px;
+    width: 100%;
+}
+
+/*DOSE DIÁRIA*/
+
+.doseDiaria img{
+    display: block;
+}
+
+/*PRODUTOS*/
+
+.produtos{
+    background-image: linear-gradient(#32302a,#090808);
+    padding: 140px 0 20px;
+}
+
+.produtos .maxPg{
+    display: flex;
+    flex-direction: row;
+}
+
+.produtos .partes{
+    position: relative;
+}
+
+.produtos .parte1{
+    width: 30%;
+}
+
+.produtos .parte2{
+    width: 70%;
+}
+
+.imgFaixa{
+    position: absolute;
+    top: -72%;
+}
+
+.textoFaixa{
+    position: absolute;
+    z-index: 2;
+    color: white;
+    font-size: 38px;
+}
+
+.linhas{
+    text-align: center;
+    display: flex;
+}
+
+.linhas .itemLinha{
+    padding: 8px;
+    width: 25%;
+}
+
+.textoLinhas{
+    color: white;
+    text-align: center;
+    max-width: 749px;
+    margin: 0 auto;
+    font-size: 22px;
+    margin-top: 30px;
+}
+
+/*RECEITAS*/
+
+.receitas{
+    padding: 20px 0 100px;
+    background: #322519 url(img/fundo-cafe.jpg) no-repeat fixed center bottom;
+}
+
+.tituloPersonalizado h2{
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    color: #6b3b15;
+    font-size: 43px;
+    padding: 10px 0;
+    background-image: linear-gradient(#cf7a0f,#fca83c,#cf7a0f);
+}
+
+.subtituloReceitas{
+    font-family: 'gotham-bold';
+    text-align: center;
+    font-size: 35px;
+    margin: 70px 0;
+    color: white;
+}
+
+.receitas .maxPg{
+    text-align: center;
+}
+
+.divReceitas{
+    display: flex;
+    margin-bottom: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.itemReceita{
+    text-align: center;
+    padding: 10px;
+    width: 20%;
+    margin-bottom: 30px;
+}
+
+.corpoReceita{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 295px;
+}
+
+.divImgReceita{
+    max-height: 179px;
+    overflow: hidden;
+}
+
+.itemReceita img{
+    display: block;
+}
+
+.itemReceita h3{
+    background-color: #990d0a;
+    margin: 0;
+    width: 100%;
+    color: white;
+    padding: 4px 20px;
+}
+
+/*FOOTER*/
+
+footer{
+    padding: 100px 0 40px;
+    background: #4f585e url(img/fundo-rodape.jpg) no-repeat center top;
+}
+
+.voltar{
+    position: fixed;
+    background-color: rgba(191, 44, 48, 0.74);
+    color: white;
+    padding: 14px 16px;
+    font-size: 20px;
+    border-radius: 63px;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer
+}
+
+.voltar:hover{
+    background-color: rgba(191, 44, 48, 0.91);
+}
+
+.newsletter{
+    width: 725px;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.newsletter h2{
+    text-transform: uppercase;
+    color: white;
+    font-size: 102px;
+    margin: 0;
+    line-height: 1;
+    margin-left: -6px;
+}
+
+.newsletter p{
+    text-transform: uppercase;
+    color: white;
+    font-size: 32.5px;
+    margin: 0 0 20px;
+}
+
+.newsletter input, .newsletter button{
+    display: block;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.newsletter button{
+    max-width: 280px;
+    margin: 0 auto;
+    border: 1px solid #bf2c30;
+    background-color: #bf2c30;
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding: 5px 10px;
+    cursor: pointer;
+    z-index: 2;
+    position: relative;
+}
+
+.newsletter button:focus, .newsletter button:hover{
+    outline: none;
+    background-color: transparent;
+    color: #bf2c30;
+}
+
+
+.logoFooter{
+    display: block;
+    margin: 50px auto 30px;
+}
+
+.linhaCafe{
+    position: relative;
+    padding: 20px 0;
+}
+
+.linhaCafe img{
+    display: block;
+    position: absolute;
+    top: 97%;
+    transform: translateY(-97%);
+}
+
+.menuFooter{
+    display: table;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
+.menuFooter ul{
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.menuFooter ul li{
+    list-style-type: none;
+}
+
+.menuFooter ul li a, .menuFooter .divisoria{
+    display: block;
+    color: white;
+    padding: 5px 9px;
+    font-size: 21px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.redesSociais{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.redesSociais p{
+    color: white;
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+.redesSociais img{
+    padding: 5px 20px;
+}
+
+@media (max-width:1780px) {
+    .textoQuemSomos{top: 74%;transform: translateY(-74%);padding: 0 75px;}
+}
+
+@media (max-width:1700px) {
+    .logo {width: 400px;position: absolute;right: 6%;top: 26%;transform: translateY(26%);}
+    .menuDesktop ul{transform: translateX(27%)}
+    .menuDesktop ul li a, .menuDesktop .divisoria {font-size: 17px;}
+}
+
+@media (max-width:1630px) {
+    .textoQuemSomos{top: 80%;transform: translateY(-80%);padding: 0 50px;}
+    .textoQuemSomos h2{margin-bottom: 20px;}
+}
+
+@media (max-width:1550px) {
+    .textoQuemSomos{top: 80%;transform: translateY(-80%);padding: 0 30px;}
+    .textoQuemSomos h2{margin-bottom: 15px;font-size: 30px;}
+    .textoQuemSomos p {font-size: 15px;}
+}
+
+@media (max-width:1500px) {
+    .logo {width: 350px;position: absolute;right: 6%;top: 26%;transform: translateY(26%);}
+    .menuDesktop ul li a, .menuDesktop .divisoria {font-size: 16px;}
+    .menuDesktop ul{transform: translateX(29%)}
+    .banner h1 {font-size: 25px;width: 410px;}
+    .banner span {font-size: 84px;letter-spacing: -9px;}
+}
+
+@media (max-width:1400px) {
+    .logo {width: 350px;position: absolute;right: 6%;top: 17%;transform: translateY(16%);}
+    .menuDesktop ul li a, .menuDesktop .divisoria {font-size: 16px;}
+    .menuDesktop ul{transform: translateX(32%)}
+    .banner h1 {font-size: 25px;width: 410px;}
+    .banner span {font-size: 84px;letter-spacing: -9px;}
+    .subtituloReceitas {font-size: 26px;margin: 40px 0;}
+    .receitas {padding: 20px 0 40px;}
+    .menuDesktop ul {width: 638px;}
+    
+    .newsletter{width: 600px}
+    .newsletter h2{font-size: 84px;}
+    .newsletter p{font-size: 26.5px;}
+    .menuFooter ul li a, .menuFooter .divisoria{font-size:18px}
+    .redesSociais p{font-size:22px;}
+    .redesSociais img {width: 50px;padding: 0;margin: 0 10px}
+    .produtos {padding: 126px 0 20px;}
+}
+
+@media (max-width:1380px) {
+    .textoQuemSomos{top: 80%;transform: translateY(-80%);padding: 0 20px;}
+    .textoQuemSomos h2{margin-bottom: 15px;font-size: 30px;}
+    .textoQuemSomos p {font-size: 14px;}
+}
+
+@media (max-width:1280px) {
+    .textoQuemSomos{top: 90%;transform: translateY(-90%);padding: 0 20px;}
+    .textoQuemSomos h2{margin-bottom: 15px;font-size: 30px;}
+    .textoQuemSomos p {font-size: 14px;}
+}
+
+@media (max-width:1255px) {
+    .banner h1 {display:block !Important}
+    .textoQuemSomos {
+        transform: none;
+        position: static;
+        opacity: 1 !Important;
+        background: #322519 url(img/fundo-cafe.jpg) no-repeat fixed center bottom;
+        width: 100%;
+        max-width: 100%;
+        padding: 30px 0;
+    }
+    .textoQuemSomos p{
+        width: 1024px;
+        max-width: 96%;
+    }
+}
+
+@media (max-width:1300px) {
+    .logo{right: 0;}
+}
+
+@media (max-width:1150px) {
+    .itemReceita{width: 25%;margin-bottom:15px}
+    .produtos {padding: 114px 0 20px;}
+}
+
+@media (max-width:1000px) {
+    .logo {width: 250px}
+    .menuDesktop ul li a, .menuDesktop .divisoria {font-size: 14px;padding: 5px 5px;}
+    .menuDesktop ul{transform: translateX(34%);width: 500px;}
+    .banner h1 {font-size: 20px;width: 340px;}
+    .banner span {font-size: 65px;letter-spacing: -4px;}
+    
+    .newsletter{width: 450px}
+    .newsletter h2{font-size: 63px;}
+    .newsletter p{font-size: 20px;}
+    .menuFooter ul li a, .menuFooter .divisoria{font-size:16px}
+    .redesSociais p{font-size:18px;}
+    .redesSociais img {width: 50px;padding: 0;margin: 0 10px}
+    .logoFooter {width: 300px;margin: 30px auto 35px;}
+    
+    .textoLinhas {max-width: 580px;font-size: 19px;}
+    .subtituloReceitas {font-size: 20px;}
+    .tituloPersonalizado h2{font-size: 36px;}
+    .produtos {padding: 104px 0 20px;}
+}
+
+@media (max-width:900px) {
+    .menuRetratil{display:block}
+    .menuDesktop{display:none}
+    .menuRetratil{display:block;width:36px;position:absolute;left:0;top:25px}
+    .menu{width:210px}
+    #menu{list-style-type:none;margin:0;padding:0;max-width:100%}
+    #menu li a{max-width:100%;display:block;padding:10px 20px;text-decoration:none;color:#fff;border-bottom:1px solid #fff;font-size:15px}
+    #menu li{max-width:100%;width:100%}
+    #menu li.ativo,#menu li:hover{background-color:#abc7bc}
+    #menu li a:visited{color:#fff}
+    #menu li a:hover,#menuCel li .current{color:#fff;background-color:rgba(0,0,0,0.22)}
+    .control-nav{position:absolute;display:block;top:-21px;left:29px;display:block;width:30px;padding:5px 0;border:solid #ffffff;border-top:solid #ffffff;border-width:3px 0;z-index:99999;cursor:pointer;border-radius:3px}
+    .control-nav:before{content:"";display:block;height:3px;background:#ffffff;min-height:100%;border-radius:3px}
+    .control-nav-close{display:none;position:fixed;right:0;top:0;background-color:rgba(0,0,0,0.22);bottom:0;left:0;display:block;z-index:20;-webkit-transition:all 500ms ease;transition:all 500ms ease;-webkit-transform:translate(100%,0);-ms-transform:translate(100%,0);transform:translate(100%,0);height:100%;min-height:100%}
+    #menunav{position:fixed;top:0;right:0;padding:5px;background:#ab2c37;background-size:100% 100%;z-index:99999;min-height:100%;-webkit-transition:all 500ms ease;transition:all 500ms ease;-webkit-transform:translate(100%,0);-ms-transform:translate(100%,0);transform:translate(100%,0)}
+    #control-nav:checked ~ .control-nav-close{-webkit-transform:translate(0,0);-ms-transform:translate(0,0);transform:translate(0,0)}
+    #control-nav:checked ~ #menunav{-webkit-transform:translate(0,0);-ms-transform:translate(0,0);transform:translate(0,0)}
+}
+
+@media (max-width:840px) {
+    .logo {width: 200px}
+    .menuDesktop ul li a, .menuDesktop .divisoria {font-size: 14px;padding: 5px 5px;}
+    .menuDesktop ul{transform: translateX(34%);width: 500px;}
+    .banner h1 {font-size: 16px;width: 256px;right: 10px;left: inherit;transform: translateY(-64%);}
+    .banner span {font-size: 51px;letter-spacing: -4px;}
+    
+    .textoLinhas {max-width: 516px;font-size: 17px;}
+    .subtituloReceitas {font-size: 18px;}
+    .tituloPersonalizado h2{font-size: 36px;}
+    
+    .produtos {padding: 94px 0 20px;}
+}
+
+@media (max-width:760px) {
+    .itemReceita{width: 33.3333%;margin-bottom:10px}
+}
+
+@media (max-width:745px) {
+    .produtos {padding: 104px 0 20px;}
+    .imgFaixa {position: absolute;top: -68%;}
+}
+
+@media (max-width:700px) {
+    .itemReceita{width: 33.3333%;margin-bottom:10px}
+    .newsletter {width: 380px;}
+    .newsletter h2 {font-size: 53px;}
+    .newsletter p {font-size: 16.8px;}
+    .newsletter button{font-size: 15px;padding: 7px 10px;}
+    .logoFooter {width: 240px; margin: 30px auto 35px;}
+    .menuFooter ul li a, .menuFooter .divisoria {font-size: 13px;}
+    .redesSociais p {font-size: 16px;}
+    .redesSociais img {width: 40px;padding: 0;margin: 0 6px;}
+    
+    .subtituloReceitas {font-size: 18px;max-width: 350px;margin: 30px auto;}
+}
+
+@media (max-width:620px) {
+    .itemReceita{width: 50%;}
+    .logo {width: 150px}
+    .banner h1 {font-size: 13px;width: 210px;right: 10px;left: inherit;transform: translateY(-64%);}
+    .banner span {font-size: 41px;letter-spacing: -3px;}
+    .tituloPersonalizado h2 {font-size: 26px;}
+    .linhas {flex-wrap: wrap;}
+    .linhas .itemLinha {width: 50%;}
+    
+    .produtos {padding: 95px 0 20px;}
+    .imgFaixa {position: absolute;top: -27%;}
+}
+
+@media (max-width:530px) {
+    footer {padding: 40px 0}
+    .newsletter {width: 310px;}
+    .newsletter h2 {font-size: 43px;}
+    .newsletter p {font-size: 13.8px;}
+    .newsletter button{font-size: 12px;padding: 7px 10px;    max-width: 190px;}
+    .logoFooter {width: 200px;margin: 20px auto 20px;}
+    .menuFooter ul li a, .menuFooter .divisoria {font-size: 8px;}
+    .redesSociais p {font-size: 13px;}
+    .redesSociais img {width: 30px;padding: 0;margin: 0 3px;}
+    .textoLinhas {max-width: 318px;font-size: 14px;}
+}
+
+@media (max-width:500px) {
+    .banner h1 {font-size: 10px;width: 162px;}
+    .banner span {font-size: 31px;letter-spacing: -2px;}
+}
+
+@media (max-width:450px) {
+    .itemReceita{width: 100%;}
+    
+    .produtos {padding: 74px 0 20px;}
+    .imgFaixa {position: absolute;top: -27%;}
+}
+
+@media (max-width:415px) {
+    .banner h1 {font-size: 8px;width: 130px;}
+    .banner span {font-size: 22.5px;letter-spacing: 0px;}
+    
+    footer {padding: 40px 0}
+    .newsletter {width: 250px;}
+    .newsletter h2 {font-size: 35px;margin-left: -3px;}
+    .newsletter p {font-size: 11px;}
+    .newsletter button{font-size: 11px;padding: 7px 10px;max-width: 170px;}
+    .logoFooter {width: 150px;margin: 15px auto 15px;}
+    .menuFooter ul li a, .menuFooter .divisoria {font-size: 8px;}
+    .redesSociais p {font-size: 12px;}
+    .redesSociais img {width: 30px;padding: 0;margin: 0 3px;}
+}

@@ -1,0 +1,857 @@
+/*CSS Reset*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+:focus {
+	outline: 0;
+}
+
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*CSS*/
+body{
+	background-color: #fdf0d1;
+}
+#background_topo{
+	position: absolute;
+	background-image: url(../imagens/background_topo.png);
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 129px;
+	min-width: 952px;
+}
+
+p, a{
+	font-family: 'FranklinGothicBookRegular';
+}
+
+#logo{
+	position: absolute;
+	width: 237px;
+	height: 93px;
+	left: 50%;
+	margin-left: -118.5px;
+	top: 20px;
+	z-index: 10001;
+}
+
+#menu_esq{
+	position: absolute;
+	top: 70px;
+	left: 50%;
+	margin-left: -410px;
+	z-index: 10000;
+}
+
+#menu_esq ul li{
+	display: inline;
+}
+
+#menu_esq ul li a{
+	color: #d0b062;
+	text-decoration: none;
+	font-size: 17.7px;
+	font-family: 'FranklinGothicBookRegular';
+}
+
+#menu_esq ul li a:hover{
+	color: #fff;
+	font-family: 'FranklinGothicBookRegular';
+}
+
+#barra_esq{
+	position: absolute;
+	top: 65px;
+	left: 50%;
+	margin-left: -266px;
+	z-index: 3;
+}
+
+#menu_dir{
+	position: absolute;
+	top: 70px;
+	left: 50%;
+	margin-left: 160px;
+	z-index: 1;
+}
+
+#menu_dir ul li{
+	display: inline;
+	margin-right: 63px;
+}
+
+#menu_dir ul li a{
+	color: #d0b062;
+	text-decoration: none;
+	font-size: 17.7px;
+}
+
+#menu_dir ul li a:hover{
+	color: #fff;
+}
+
+#barra_dir{
+	position: absolute;
+	top: 65px;
+	left: 50%;
+	margin-left: 266px;
+	z-index: 3;
+}
+
+#background_titulo{
+	position: relative;
+	background-color: #d6c088;
+	height: 48px;
+	width: 100%;
+	min-width: 952px;
+	top: 7px;
+	left: 0px
+}
+
+#centro{
+	position: relative;
+	width: 756px;
+	height: 300px;
+	left: 50%;
+	margin-left: -378px;;
+	top: 0px;
+	z-index: 1;
+}
+
+#centro_quemSomos{
+	position: relative;
+	width: 756px;
+	height: 690px;
+	left: 50%;
+	margin-left: -378px;;
+	top: 0px;
+	z-index: 1;
+}
+
+#centro_faleConosco{
+	position: relative;
+	width: 756px;
+	min-width: 756px;
+	height: 498px;
+	left: 50%;
+	margin-left: -378px;;
+	top: 0px;
+	z-index: 1;
+}
+
+#centro_faleConosco{
+	position: relative;
+	width: 756px;
+	min-width: 756px;
+	height: 898px;
+	left: 50%;
+	margin-left: -378px;;
+	top: 0px;
+	z-index: 1;
+}
+
+#botoes{
+	position: relative;
+	width: 582px;
+	height: 145px;
+	top: 7px;
+	left: 50%;
+	margin-left: -291px;
+}
+
+#sombraEsq{
+	position: absolute;
+	top: 20px;
+	left: -40px;
+}
+
+#sombraDir{
+	position: absolute;
+	top: 20px;
+	left: 776px;
+}
+
+#sombraEsqQuemSomos{
+	position: absolute;
+	top: 150px;
+	left: -40px;
+}
+
+#sombraDirQuemSomos{
+	position: absolute;
+	top: 150px;
+	left: 776px;
+}
+
+#sombraEsqFaleConosco{
+	position: absolute;
+	top: 115px;
+	left: -40px;
+}
+
+#sombraDirProdutos{
+	position: absolute;
+	top: 315px;
+	left: 836px;
+}
+
+#sombraEsqProdutos{
+	position: absolute;
+	top: 315px;
+	left: -140px;
+}
+
+#sombraDirFaleConosco{
+	position: absolute;
+	top: 115px;
+	left: 776px;
+}
+
+#sorriso{
+	position: absolute;
+	width: 128px;
+	height: 142px;
+	left: 50%;
+	margin-left: -140px;
+	top: 28px;
+}
+
+#mirandouro{
+	position: absolute;
+	width: 128px;
+	height: 142px;
+	left: 50%;
+	margin-left: 20px;
+	top: 28px;
+	z-index: 1;
+}
+
+#marcaPropria{
+	position: absolute;
+	width: 128px;
+	height: 142px;
+	left: 50%;
+	margin-left: 180px;
+	top: 28px;
+}
+
+#padreVictor{
+	position: absolute;
+	width: 128px;
+	height: 142px;
+	left: 50%;
+	margin-left: -300px;
+	top: 28px;
+}
+
+#rodape{
+	position: relative;
+	top: 62px;
+	width: 100%;
+	max-height: 179px;
+}
+
+#background_rodape{
+	width: 100%;
+	height: 215px;
+	
+}
+
+#slide{
+	position: absolute;
+	left: 0px;
+	width: 100%;
+}
+
+#conteudo{
+	position: absolute;
+	height: auto;
+	width: 100%;
+}
+
+#enfeito_fundo{
+	position: absolute;
+	width: 498px;
+	height: 83px;
+	left: 50%;
+	margin-left: -260px;
+	top: 303px;
+	z-index: -10;
+}
+
+#enfeito_fundoQuemSomos{
+	position: absolute;
+	width: 498px;
+	height: 83px;
+	left: 50%;
+	margin-left: -249px;
+	top: 693px;
+}
+
+#enfeito_fundoFaleConosco{
+	position: absolute;
+	width: 498px;
+	height: 83px;
+	left: 50%;
+	margin-left: -259px;
+	top: 500px;
+}
+
+#enfeito_fundoProdutos{
+	position: absolute;
+	width: 498px;
+	height: 83px;
+	left: 50%;
+	margin-left: -259px;
+	top: 901px;
+}
+
+#enfeito_fundoEsq{
+	position: relative;
+	top: -138px;
+	left: 50%;
+	margin-left: -410px;
+	width: 89px;
+	height: 138px;
+}
+
+#enfeito_fundoDir{
+	position: relative;
+	top: -276px;
+	left: 50%;
+	margin-left: 325px;
+	width: 89px;
+	height: 138px;
+}
+
+#menuRodape{
+	position: relative;
+	top: -381px;
+	left: 50%;
+	margin-left: -244px;
+	width: 534px;
+}
+
+#menuRodape ul li{
+	display: inline;
+	margin-right: 6px;
+	color: #a38b54;
+}
+
+#menuRodape ul li a{
+	color: #a38b54;
+	text-decoration: none;
+	font-size: 15.81px;
+}
+
+#menuRodape ul li a:hover{
+	color: #fff;
+	text-decoration: none;
+	font-size: 15.81px;
+}
+
+#barraRodape{
+	position: relative;
+	background-color: #bba26a;
+	width: 534px;
+	height: 2px;
+	top: -335px;
+	left: 50%;
+	margin-left: -267px;
+}
+
+#facebook{
+	position: relative;
+	width: 22px;
+	height: 23px;
+	left: 50%;
+	margin-left: 4px;
+	top: -303px;
+}
+
+#instagram{
+	position: relative;
+	width: 22px;
+	height: 23px;
+	left: 50%;
+	margin-left: -21px;
+	top: -327px;
+}
+
+#txtRodape1{
+	position: relative;
+	top: -343px;
+	left: 50%;
+	margin-left: -180px;
+	width: 160px;
+}
+
+#txtRodape1, #txtRodape2 p{
+	color: #010101;
+	font-size: 10.33px;
+}
+
+#txtRodape2 a{
+	color: #010101;
+	font-size: 10.33px;
+	text-decoration: none;
+}
+
+#txtRodape2{
+	position: relative;
+	top: -373px;
+	left: 50%;
+	margin-left: 35px;
+	width: 165px;
+}
+
+#texto_construcao{
+	position: relative;
+	width: 380px;
+	left: 50%;
+	margin-left: -190px;
+	top: 28px;
+	color: #907531;
+}
+
+#texto_construcao p{
+	font-size: 14.82px;
+	color: #907531;
+}
+
+#texto_pag{
+	position: relative;
+	width: 380px;
+	left: 50%;
+	margin-left: -190px;
+	top: 100px;
+	color: #907531;
+}
+
+#texto_pag p{
+	font-size: 14.82px;
+	color: #907531;
+}
+
+#barra_texto{
+	position: relative;
+	background-color: #bba26a;
+	width: 534px;
+	height: 2px;
+	top: 65px;
+	left: 50%;
+	margin-left: -267px;
+	z-index: -10;
+}
+
+#texto_quemSomos{
+	position: relative;
+	left: 50%;
+	margin-left: -350px;
+	width: 700px;
+	top: 30px;
+	font-family: Calibri;
+	font-size: 16px;
+}
+
+#tit_faleConosco{
+	position: relative;
+	top: 40px;
+}
+
+#tit_faleConosco p{
+	color: #010101;
+	font-size: 23px;
+}
+
+#barra_faleConosco1{
+	position: relative;
+	width: 700px;
+	height: 1px;
+	background-color: #d6c088;
+	top: 45px;
+	left: 50%;
+	margin-left: -350px;
+}
+#barra_faleConosco2{
+	position: absolute;
+	width: 700px;
+	height: 1px;
+	background-color: #d6c088;
+	top: 480px;
+	left: 50%;
+	margin-left: -350px;
+}
+
+#formulario{
+	position: relative;
+	top: 70px;
+	width: 580px;
+	height: 320px;
+	left: 50%;
+	margin-left: -290px;
+}
+
+#nome{
+	background-color: #fdf0d1;
+	width: 460px;
+	height: 15px;
+	left: 10px;
+	position: relative;
+}
+
+#sobrenome{
+	background-color: #fdf0d1;
+	width: 460px;
+	height: 15px;
+	left: 10px;
+	position: relative;
+}
+
+#email{
+	background-color: #fdf0d1;
+	width: 460px;
+	height: 15px;
+	left: 10px;
+	position: relative;
+}
+
+#telefone{
+	background-color: #fdf0d1;
+	width: 184px;
+	height: 15px;
+	left: 10px;
+	position: relative;
+}
+
+#celular{
+	background-color: #fdf0d1;
+	width: 184px;
+	height: 15px;
+	left: 10px;
+	position: relative;
+}
+
+#endereco{
+	background-color: #fdf0d1;
+	width: 460px;
+	height: 15px;
+	left: 10px;
+	position: relative;
+}
+
+#num{
+	background-color: #fdf0d1;
+	width: 80px;
+	height: 15px;
+	left: 10px;
+	position: relative;
+}
+
+#complemento{
+	background-color: #fdf0d1;
+	width: 243px;
+	height: 15px;
+	left: 10px;
+	position: relative;
+}
+
+#cep{
+	background-color: #fdf0d1;
+	width: 150px;
+	height: 15px;
+	left: 10px;
+	position: relative;
+}
+
+#bairro{
+	background-color: #fdf0d1;
+	width: 215px;
+	height: 15px;
+	left: 10px;
+	position: relative;
+}
+
+#uf{
+	background-color: #fdf0d1;
+	width: 184px;
+	height: 35px;
+	left: 10px;
+	position: relative;
+}
+
+#cidade{
+	background-color: #fdf0d1;
+	width: 191px;
+	height: 15px;
+	left: 10px;
+	position: relative;
+}
+
+#assunto{
+	background-color: #fdf0d1;
+	width: 184px;
+	height: 35px;
+	left: 10px;
+	position: relative;
+}
+
+#mensagem{
+	background-color: #fdf0d1;
+	width: 460px;
+	height: 100px;
+	left: 10px;
+	position: relative;
+	border: 1px solid #bdb39c;
+	-moz-box-shadow: 0 0 3px #138AE7;
+	-webkit-box-shadow: 0 0 3px #aea286;
+	box-shadow: 0 0 3px #aea286;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	padding: 7px;
+	color: #333;
+	margin-bottom: 5px; 
+}
+
+#informativo{
+
+}
+
+#enviar{
+	position: absolute;
+	top: 275px;
+	width: 100px;
+	height: 30px;
+	left: 50%;
+	margin-left: -50px;
+	border: none;
+	background-color: #bdb39c;
+	font-weight: 200;
+	color: #fdf0d1;
+} 
+
+#tit_receitas{
+	position: relative;
+	top: 35px;
+	font-size: 23px;
+}
+
+#img_receita1{
+	position: absolute;
+	top: 125px;
+	left: 30px;
+	width: 200px;
+	height: 150px;
+}
+
+#img_receita2{
+	position: absolute;
+	top: 125px;
+	left: 279px;
+	width: 200px;
+	height: 150px;
+}
+
+#img_receita3{
+	position: absolute;
+	top: 125px;
+	left: 525px;
+	width: 200px;
+	height: 150px;
+}
+
+#img_receita4{
+	position: absolute;
+	top: 340px;
+	left: 30px;
+	width: 200px;
+	height: 150px;
+}
+
+#img_receita5{
+	position: absolute;
+	top: 340px;
+	left: 279px;
+	width: 200px;
+	height: 150px;
+}
+
+#img_receita6{
+	position: absolute;
+	top: 340px;
+	left: 525px;
+	width: 200px;
+	height: 150px;
+}
+
+.cor {
+	color: #010101;
+}
+
+.cor a:hover{
+	color: #a38b54;
+}
+
+#tit_receitaDisplay{
+	position: relative;
+	top: 35px;
+	font-size: 23px;
+	left: 30px;
+}
+
+#meio{
+	position: absolute;
+	width: 700px;
+	height: 450px;
+	top: 110px;
+	left: 50%;
+	margin-left: -350px;
+	overflow: auto;
+}
+
+#ingredientes{
+	position: relative;
+	top: -150px;
+	left: 50%;
+	margin-left: -130px;
+	width: 400px;
+}
+
+#ingredientes2{
+	position: relative;
+	top: -150px;
+	left: 50%;
+	margin-left: -350px;
+	width: 400px;
+}
+
+#preparo{
+	position: relative;
+	top: -150px;
+	left: 50%;
+	margin-left: -350px;
+	width: 700px;
+}
+
+#teste p{
+	display: none;
+}
+
+#voltar{
+	position: absolute;
+	left: 665px;
+}
+
+#voltar p a{
+	color: #d6c088;
+}
+
+#voltar p a:hover{
+	color: #b39f6b;
+}
+
+#gambi:hover{
+	width: 145px;
+	height: 35px;
+	border-top: 1px solid #d6c088;
+	border-left: 1px solid #d6c088;
+	border-right: 1px solid #d6c088;
+	left: -26px;
+	top: -1px;
+	text-align: center;
+}
+
+#imagem_produto_interno{
+	position: absolute;
+	top: 170px;
+	left: 25px;
+}
+
+#tituloProduto{
+	position: absolute;
+	top: 125px;
+	left: 50%;
+	margin-left: -250px;
+	font-size: 20px;
+	width: 500px;
+	text-align: center;
+}
+
+#descricoes{
+	position: absolute;
+	top: 165px;
+	left: 350px;
+	width: 380px;
+	height: 300px;
+	overflow: auto;
+}
+
+#bordaDescricoes{
+	position: absolute;
+	top: 164px;
+	left: 340px;
+	width: 390px;
+	height: 300px;
+	border: 1px solid #d6c088;
+}
+
+#produto{
+	position: absolute;
+	width: 900px;
+	height: auto;
+	left: 50%;
+	margin-left: -450px;
+	top: 130px;
+}
+
+table{
+	width: 800px;
+}
+
+td{
+	width: 200px;
+}
+
+#xd p{
+	color: #907531;
+}

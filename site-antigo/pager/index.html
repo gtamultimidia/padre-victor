@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Exemplo plugin jquery paginação - jquery pager | Plugin jquery</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js" language="javascript"></script>
+<script src="jquery.pager.js" language="javascript"></script>
+<script>
+$(document).ready( function(){
+	$('#example1').pager('div');
+});
+</script>
+<style>
+.exemplos { border: 1px solid #999; margin: 10px 0;}
+.exemplos p { padding: 5px; margin: 0; }
+.exemplos .nav { background: #eee; border-top: 1px solid #999; padding: 5px; }
+.exemplos .nav#nav4 { border-top: 0; border-bottom: 1px solid #999; }
+.exemplos .nav a { padding: 0 5px;}
+.exemplos .nav a.highlight { color: #000; font-weight: bold; }
+</style>
+</head>
+<body>
+	<div class="exemplos">
+        <div id="example1">
+            <div><p>Conteudo da primeira div...</p></div>
+            <div><p>Conteudo da segunda div...</p></div>
+            <div><p>Conteudo da terceira div...</p></div>
+        </div>
+    </div>
+</body>
+</html>

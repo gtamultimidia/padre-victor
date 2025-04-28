@@ -1,0 +1,1096 @@
+@font-face {
+    font-family: 'gotham-medium';
+    src: url('css/fontes/gotham-medium.eot');
+    src: url('css/fontes/gotham-medium.eot?#iefix') format('embedded-opentype'),
+         url('css/fontes/gotham-medium.woff2') format('woff2'),
+         url('css/fontes/gotham-medium.woff') format('woff'),
+         url('css/fontes/gotham-medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gotham-bold';
+    src: url('css/fontes/gotham-bold.eot');
+    src: url('css/fontes/gotham-bold.eot?#iefix') format('embedded-opentype'),
+         url('css/fontes/gotham-bold.woff2') format('woff2'),
+         url('css/fontes/gotham-bold.woff') format('woff'),
+         url('css/fontes/gotham-bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gotham-book';
+    src: url('css/fontes/gotham-book.eot');
+    src: url('css/fontes/gotham-book.eot?#iefix') format('embedded-opentype'),
+         url('css/fontes/gotham-book.woff2') format('woff2'),
+         url('css/fontes/gotham-book.woff') format('woff'),
+         url('css/fontes/gotham-book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Amithen';
+    src: url('css/fontes/Amithen.eot');
+    src: url('css/fontes/Amithen.eot') format('embedded-opentype'),
+         url('css/fontes/Amithen.ttf') format('truetype');
+}
+
+*{
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    
+    font-family: 'gotham-medium';
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+.maxPg{
+    width: 96%;
+    max-width: 1836px;
+    margin: 0 auto;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+h1, h2, h3, h4, h5, b{
+    font-weight: normal;
+}
+
+/*HEADER*/
+
+header{
+    background-color: transparent;
+    padding: 20px 0;
+    position: static;
+    background-color: #c02b31;
+    width: 100%;
+}
+
+header .maxPg{
+    position: relative;
+}
+
+.topo{
+    display: flex;
+}
+
+.sociaisTopo{
+    display: flex;
+    align-items: center;
+    width: 24%;
+    justify-content: center;
+}
+
+.sociaisTopo a{
+    color: #ffab40;
+    text-decoration: none;
+    font-size: 22px;
+    margin-right: 10px;
+}
+
+.sociaisTopo input{
+    color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 5px
+}
+
+.menuRetratil{display:none}
+
+.menuDesktop{
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+.menuDesktop ul{
+    padding: 0;
+    display: flex;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: 0;
+    width: 855px;
+    max-width: 100%;
+    margin-top: 0;
+}
+
+.menuDesktop ul li{
+    list-style-type: none;
+}
+
+.menuDesktop ul li a, .menuDesktop .divisoria{
+    display: block;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.logoTopo{
+    width: 26%;
+    position: relative;
+}
+
+.logo{
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    top: 80%;
+    transform: translateY(-8%);
+}
+
+/*BANNER*/
+
+.banner{
+    position: relative;
+}
+
+.banner img{
+    display: block;
+}
+
+.relativaImagem{
+    position: relative;
+}
+
+/*QUEM SOMOS*/
+
+.textoQuemSomos h2{
+    text-align: center;
+    width: 100%;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-top: 0;
+}
+
+.textoQuemSomos{
+    position: absolute;
+    top: 85%;
+    right: 0;
+    left: initial;
+    margin: 0 auto;
+    transform: translateY(-87%);
+    color: white;
+    line-height: 1;
+    font-size: 36px;
+    width: 47%;
+    text-align: left;
+    opacity: 0;
+    -webkit-transition: All 1s ease;
+    -moz-transition: All 1s ease;
+    -o-transition: All 1s ease;
+    padding: 72px 75px;
+    background-color: black;
+    border: 8px double;
+}
+
+.textoQuemSomos p{
+    font-family: 'gotham-book';
+    text-align: justify;
+    font-size: 16px;
+    margin: 0 auto 20px;
+    width: 100%;
+}
+
+/*RECEITAS E-BOOK*/
+
+.receitasEbook{
+    position: relative;
+}
+
+.receitasEbook img{
+    display: block;
+}
+
+.receitasEbook p{
+    color: #9c6724;
+    position: absolute;
+    bottom: 12%;
+    transform: translateY(-16%);
+    left: 3.5%;
+    max-width: 630px;
+    text-align: justify;
+    font-size: 30px;
+    margin: 0;
+}
+
+.receitasEbook p b{
+    color: #ffab40;
+    font-family: 'gotham-bold';
+}
+
+.receitasEbook p a{
+    color: #ffab40;
+}
+
+/*PRODUTOS*/
+
+.produtos{
+    background: #ffffff url(img/bk-produtos.jpg) no-repeat fixed center bottom;
+    padding: 70px 0;
+    color: #a10004;
+}
+
+.imgFaixa{
+    position: absolute;
+    top: -72%;
+}
+
+.produtos h2{
+    text-align: center;
+    margin: 0;
+    font-size: 70px;
+    text-transform: uppercase;
+    font-family: 'gotham-bold';
+}
+
+.produtos .textoProdutos {
+    text-align: center;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 36px;
+}
+
+.textoFaixa{
+    position: absolute;
+    z-index: 2;
+    color: white;
+    font-size: 38px;
+}
+
+.linhas{
+    text-align: center;
+    display: flex;
+    align-items: baseline;
+}
+
+.linhas .itemLinha{
+    padding: 8px;
+    width: 25%;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 2;
+}
+
+.itemLinha a{
+    position: relative;
+}
+
+.imgHover{
+    visibility: hidden;
+    position: absolute;
+}
+
+.itemLinha:hover .imgHover{
+    visibility: visible;
+}
+
+.itemLinha:hover .imgSelo{
+    visibility: hidden;
+}
+
+.textoLinhas{
+    text-align: center;
+    max-width: 917px;
+    margin: 0 auto;
+    font-size: 23px;
+    margin: 70px auto;
+}
+
+.divPaginacao{text-align:center;margin-top:20px}
+ul.paginacao{padding:0;display:inline-block;margin:0 auto}
+ul.paginacao li{list-style-type:none;float:left;margin:0 3px 5px}
+ul.paginacao li a{padding:10px;background-color:#990d0a;color:#fff;text-decoration:none;line-height:1;display:block;font-size:18px}
+ul.paginacao li.ativo a,ul.paginacao li a:hover{background-color:transparent;color:#990d0a}
+ul.paginacao li.ativo a{cursor:no-drop}
+ul.paginacao li.desativado a{cursor:no-drop!important;background-color:transparent!important;color:rgba(128,128,128,0.55)!important}
+
+
+/*PRODUTOS PG*/
+
+.produtosLinha{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.itemProduto{
+    width: 33.3333%;
+    padding: 20px;
+}
+
+.itemProduto .corpoProduto{
+    display: flex;
+    max-width: 440px;
+    margin: 0 auto 20px;
+}
+
+.itemProduto .divImgProduto{
+    width: 30%;
+}
+
+.itemProduto .divConteudoProduto{
+    padding-left: 10px;
+    width: 70%;
+}
+
+.divConteudoProduto .tituloProduto{
+    margin: 0 auto 15px;
+}
+
+.divConteudoProduto p{
+    font-family: 'gotham-book';
+    text-align: left;
+    margin: 0;
+}
+
+.linha{
+    padding: 40px 0;
+}
+
+/*CONTATO*/
+
+.contato{
+    border: 10px solid #fca83c;
+    border-left: none;
+    border-right: none;
+    background-color: #302418;
+    padding: 50px 0;
+}
+
+.contato .maxPg{
+    max-width: 1024px;
+}
+
+.contato h2{
+    font-size: 43px;
+    margin: 0 0 40px;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+}
+
+.gruposForm{
+    display: flex;
+}
+
+.grupo1, .grupo2{
+    width: 50%;
+}
+
+.gruposForm .fake{
+    width: 40px;
+}
+
+.campoForm{
+    background-color: transparent;
+    width: 100%;
+    display: block;
+    border: none;
+    border-bottom: 2px solid #CCCCCC;
+    padding: 10px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    width: 100%;
+}
+
+.campoForm:focus{
+    outline: none;
+    border-bottom: 2px solid #000000;
+}
+
+.gruposForm input:last-child{
+    margin-bottom: 0;
+}
+
+.gruposForm textarea {
+    margin: 0;
+    height: 100%;
+}
+
+::-webkit-input-placeholder{color:#cccccc}
+::-moz-placeholder{color:#cccccc}
+:-ms-input-placeholder{color:#cccccc}
+
+/*BLOG*/
+
+.blogHome .maxPg{
+    padding: 50px 0;
+    max-width: 1024px;
+}
+
+.blogHome h2{
+    margin-top: 0;
+}
+
+.item_blog_home p{
+    font-family: 'gotham-book';
+}
+
+.blogHome h2{
+    font-size: 43px;
+    margin: 0 0 40px;
+    text-align: center;
+    color: #302418;
+    text-transform: uppercase;
+}
+
+.botaoVerTodas{
+    font-size: 16px;
+    color: #302418;
+}
+
+.intro_noticias_home .max_pg{
+    width: 96%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.intro_noticias_home h1{
+    text-align: center;
+}
+
+.blog * {
+    font-family: 'gotham-book';
+}
+
+.dataBlog{
+    font-size: 14px;
+}
+
+/*MAPA*/
+
+.mapa{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    min-height: 300px;
+}
+
+.infoContato{
+    text-align: center;
+    color: white;
+    font-family: 'gotham-book';
+}
+
+/*FOOTER*/
+
+footer{
+    padding: 65px 0 0;
+    background: #ffffff url(img/bk-footer.jpg) no-repeat fixed center bottom;
+}
+
+footer p{
+    margin: 0;
+}
+
+.voltar{
+    position: fixed;
+    background-color: rgba(191, 44, 48, 0.74);
+    color: white;
+    padding: 14px 16px;
+    font-size: 20px;
+    border-radius: 63px;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer
+}
+
+.voltar:hover{
+    background-color: rgba(191, 44, 48, 0.91);
+}
+
+.newsletter {
+    max-width: 100%;
+    margin: 50px auto 70px;
+    text-align: center;
+}
+
+.tituloEbook{
+    text-transform: uppercase;
+    color: #a10004;
+    font-size: 65px;
+    text-align: center;
+    margin: 0;
+    line-height: 1;
+}
+
+.newsletter p{
+    text-transform: uppercase;
+    color: white;
+    font-size: 32.5px;
+    margin: 0 0 20px;
+}
+
+input:focus, button:focus{
+    outline: none;
+}
+
+.newsletter form{
+    max-width: 780px;
+    margin: 0 auto;
+}
+    
+.newsletter input, .newsletter button{
+    display: block;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    color: black;
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: #e7e7e7;
+    position: relative;
+    z-index: 3;
+    font-size: 16px;
+    font-family: 'gotham-book';
+}
+
+.newsletter input::-webkit-input-placeholder  {color:black}
+.newsletter input:-moz-placeholder, textarea:-moz-placeholder {color:black}
+
+.newsletter button{
+    max-width: 280px;
+    margin: 0 auto;
+    border: 1px solid #ffab40;
+    background-color: #ffab40;
+    color: #950000;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding: 5px 10px;
+    cursor: pointer;
+    z-index: 2;
+    position: relative;
+    font-family: 'gotham-bold';
+}
+
+.newsletter button:hover{
+    background-color: transparent;
+    color: #ffab40;
+}
+
+.rodape{
+    background-color: #cd353a;
+    padding: 50px 0;
+}
+
+.infoRodape{
+    background-color: #9a191d;
+    color: white;
+    padding: 12px 0;
+}
+
+.infoRodape .maxPg{
+    display: flex;
+    align-items: center;
+}
+
+.redesSociais{
+    width: 30%;
+}
+
+.direitos{
+    width: 40%;
+    text-align: center;
+}
+
+.desenvolvido{
+    width: 30%;
+}
+
+.redesSociais a{
+    color: #ffab40;
+    font-size: 13px;
+}
+
+.logoFooter{
+    display: block;
+    margin: 0 auto;
+}
+
+.linhaCafe{
+    position: relative;
+    padding: 20px 0;
+}
+
+.linhaCafe img{
+    display: block;
+    position: absolute;
+    top: 97%;
+    transform: translateY(-97%);
+}
+
+.menuFooter{
+    display: table;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
+.menuFooter ul{
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.menuFooter ul li{
+    list-style-type: none;
+}
+
+.menuFooter ul li a, .menuFooter .divisoria{
+    display: block;
+    color: white;
+    padding: 5px 9px;
+    font-size: 21px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.desenvolvido, .desenvolvido *{
+    text-align: right;
+}
+
+.ui-dialog-content.ui-widget-content{
+	font-size: 14px;
+}
+
+.txt50anos{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 96%;
+    max-width: 1836px;
+    margin: 0 auto;
+    text-align: right;
+    top: 23.5%;
+    transform: translateY(-23.5%);
+}
+
+.txt50anos, .txt50anos span{
+    font-family: 'Amithen' !Important;
+    color: #fff;
+    font-size: 3.7vw;
+    line-height: 1;
+}
+
+.txt50anos span{
+    font-family: 'Amithen' !Important;
+    color: #faa43d;
+}
+
+@media (max-width:1780px) {
+    .textoQuemSomos{top: 77%;transform: translateY(-74%);padding: 35px 75px;}
+    .menuDesktop ul li a, .menuDesktop .divisoria {font-size: 18px;}
+    .logo{
+        top: 90%;
+        transform: translateY(-11%);
+    }
+}
+
+@media (max-width:1700px) {
+    .menuDesktop ul li a, .menuDesktop .divisoria {font-size: 17px;}
+    .logo {
+        width: 320px;
+        top: 80%;
+        transform: translateY(-4%);
+    }
+}
+
+@media (max-width:1630px) {
+    .textoQuemSomos{top: 80%;transform: translateY(-80%);padding: 20px 50px;}
+    .textoQuemSomos h2{margin-bottom: 20px;}
+}
+
+@media (max-width:1585px) {
+    .menuDesktop ul li a, .menuDesktop .divisoria {font-size: 16px;padding: 5px 8px;}
+    
+    .tituloEbook {font-size: 55px;}
+    .produtos h2 {font-size: 60px;}
+    .produtos .textoProdutos {font-size: 31px;}
+    .textoLinhas {max-width: 800px;font-size: 20px;}
+    .menuFooter ul li a, .menuFooter .divisoria {font-size: 18px;}
+    .receitasEbook p {
+        bottom: 11%;
+        transform: translateY(-16%);
+        left: 3.5%;
+        max-width: 500px;
+        font-size: 23px;
+    }
+}
+
+@media (max-width:1550px) {
+    .textoQuemSomos{top: 80%;transform: translateY(-80%);padding: 20px 30px;}
+    .textoQuemSomos h2{margin-bottom: 15px;font-size: 30px;}
+    .textoQuemSomos p {font-size: 15px;}
+}
+
+@media (max-width:1500px) {
+    .logo {
+        width: 300px;
+        top: 80%;
+        transform: translateY(-7%);
+    }
+    .menuDesktop ul li a, .menuDesktop .divisoria {font-size: 16px;}
+    
+    .logoFooter {
+        width: 450px;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width:1445px) {
+    .logo {
+        width: 250px;
+        top: 90%;
+        transform: translateY(-4%);
+    }
+    .menuDesktop ul li a, .menuDesktop .divisoria {padding: 5px 5px;}
+    
+    .sociaisTopo {
+        width: 35%;
+    }
+}
+
+@media (max-width:1400px) {
+    .menuDesktop ul li a, .menuDesktop .divisoria {font-size: 16px;}
+    .newsletter{width: 600px}
+    .newsletter p{font-size: 26.5px;}
+    .menuFooter ul li a, .menuFooter .divisoria{font-size:18px}
+    
+    .itemProduto{padding: 20px;width:50%}
+    
+    .tituloEbook {font-size: 50px;max-width: 720px;margin: 0 auto;}
+    .produtos h2 {font-size: 60px}
+    .produtos .textoProdutos {font-size: 31px;}
+    .textoLinhas {max-width: 800px;font-size: 20px;}
+    .menuFooter ul li a, .menuFooter .divisoria {font-size: 18px;}
+    .receitasEbook p {
+        bottom: 10%;
+        transform: translateY(-16%);
+        left: 3.5%;
+        max-width: 500px;
+        font-size: 23px;
+    }
+}
+
+@media (max-width:1380px) {
+    .textoQuemSomos{top: 80%;transform: translateY(-80%);padding: 20px 20px;}
+    .textoQuemSomos h2{margin-bottom: 15px;font-size: 30px;}
+    .textoQuemSomos p {font-size: 14px;}
+    .logoFooter {
+        width: 390px;
+    }
+}
+
+@media (max-width:1366px) {
+    .produtos {
+        padding: 20px 0;
+    }
+    .textoLinhas {
+        margin: 35px auto;
+    }
+}
+
+@media (max-width:1330px) {
+    .logo {
+        width: 230px;
+        top: 80%;
+        transform: translateY(-4%);
+        left: 16%;
+    }
+    .menuDesktop {width: 55%;}
+    .menuDesktop ul li a, .menuDesktop .divisoria {font-size: 16px;}
+    .sociaisTopo {
+        width: 25%;
+    }
+}
+
+@media (max-width:1280px) {
+    .textoQuemSomos{top: 90%;transform: translateY(-90%);padding: 20px 20px;}
+    .textoQuemSomos h2{margin-bottom: 15px;font-size: 30px;}
+    .textoQuemSomos p {font-size: 14px;}
+}
+
+@media (max-width:1255px) {
+    .textoQuemSomos {
+        transform: none;
+        position: static;
+        opacity: 1 !Important;
+        background: #322519 url(img/fundo-cafe.jpg) no-repeat fixed center bottom;
+        width: 100%;
+        max-width: 100%;
+        padding: 30px 0;
+        border: none;
+    }
+    .textoQuemSomos p{
+        width: 1024px;
+        max-width: 96%;
+    }
+    
+    .produtos {padding: 40px 0;}
+    .tituloEbook {font-size: 40px;max-width: 720px;margin: 0 auto;}
+    .produtos h2 {font-size: 40px}
+    .produtos .textoProdutos {font-size: 22px;}
+    .textoLinhas {max-width: 480px;font-size: 16px;margin: 40px auto;}
+    .menuFooter ul li a, .menuFooter .divisoria {font-size: 18px;}
+    .receitasEbook p {
+        bottom: 10%;
+        transform: translateY(-12%);
+        left: 3.5%;
+        max-width: 375px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width:1221px) {
+    .menuDesktop {width: 53%;}
+    .menuDesktop ul li a, .menuDesktop .divisoria {font-size: 14px;}
+    .menuDesktop ul li a, .menuDesktop .divisoria {padding: 5px;}
+}
+
+@media (max-width:1150px) {
+    .logo {width: 200px;}
+    .menuDesktop ul li a, .menuDesktop .divisoria {padding: 3px;}
+    .menuDesktop {width: 55%;}
+}
+
+@media (max-width:1055px) {
+    .logo {width: 180px}
+    .menuDesktop ul li a, .menuDesktop .divisoria {font-size: 13px;padding: 4px;}
+    .suporteDiv{
+        width: 9%;
+    }
+    .sociaisTopo{width: 100%}
+    .menuRetratil{display:block}
+    .menuDesktop{display:none}
+    .menuRetratil{display:block;width:36px;position:absolute;left:0;top:25px}
+    .menu{width:210px}
+    #menu{list-style-type:none;margin:0;padding:0;max-width:100%}
+    #menu li a{max-width:100%;display:block;padding:10px 20px;text-decoration:none;color:#fff;border-bottom:1px solid #fff;font-size:15px}
+    #menu li{max-width:100%;width:100%}
+    #menu li.ativo,#menu li:hover{background-color:#abc7bc}
+    #menu li a:visited{color:#fff}
+    #menu li a:hover,#menuCel li .current{color:#fff;background-color:rgba(0,0,0,0.22)}
+    .control-nav{position:absolute;display:block;top:-18px;left:29px;display:block;width:30px;padding:5px 0;border:solid #ffffff;border-top:solid #ffffff;border-width:3px 0;z-index:99999;cursor:pointer;border-radius:3px}
+    .control-nav:before{content:"";display:block;height:3px;background:#ffffff;min-height:100%;border-radius:3px}
+    .control-nav-close{display:none;position:fixed;right:0;top:0;background-color:rgba(0,0,0,0.22);bottom:0;left:0;display:block;z-index:20;-webkit-transition:all 500ms ease;transition:all 500ms ease;-webkit-transform:translate(100%,0);-ms-transform:translate(100%,0);transform:translate(100%,0);height:100%;min-height:100%}
+    #menunav{position:fixed;top:0;right:0;padding:5px;background:#ab2c37;background-size:100% 100%;z-index:99999;min-height:100%;-webkit-transition:all 500ms ease;transition:all 500ms ease;-webkit-transform:translate(100%,0);-ms-transform:translate(100%,0);transform:translate(100%,0)}
+    #control-nav:checked ~ .control-nav-close{-webkit-transform:translate(0,0);-ms-transform:translate(0,0);transform:translate(0,0)}
+    #control-nav:checked ~ #menunav{-webkit-transform:translate(0,0);-ms-transform:translate(0,0);transform:translate(0,0)}
+    
+    
+    
+}
+
+@media (max-width:1100px) {
+    .receitasEbook p {
+        max-width: 305px;
+        font-size: 17px;
+    }
+    .logo {
+        right: 0;
+        left: inherit;
+    }
+}
+
+@media (max-width:1000px) {
+    .newsletter{width: 450px}
+    .newsletter p{font-size: 20px;}
+    .menuFooter ul li a, .menuFooter .divisoria{font-size:16px}
+    .logoFooter {width: 300px}
+    
+    .textoLinhas {max-width: 580px;font-size: 19px;}
+    .tituloPersonalizado h2, .contato h2, .blogHome h2{font-size: 36px;}
+    
+    .divConteudoProduto p{font-size:14px}
+    .desenvolvido{font-size: 13px;}
+}
+
+@media (max-width:840px) {
+    .logo {width: 200px}
+    .menuDesktop ul li a, .menuDesktop .divisoria {font-size: 14px;padding: 5px 5px;}
+    
+    .textoLinhas {max-width: 516px;font-size: 17px;}
+    .tituloPersonalizado h2, .contato h2, .blogHome h2{font-size: 36px;}
+}
+
+@media (max-width:810px) {
+    .desenvolvido img{display: block;margin: 5px 0 0 auto;}
+}
+
+@media (max-width:800px) {
+    .tituloEbook {font-size: 32px;}
+    .logoFooter {width: 250px;}
+    .menuFooter ul li a, .menuFooter .divisoria {font-size: 14px;}
+    .infoContato {font-size: 14px;}
+    .direitos, .desenvolvido{font-size:13px;}
+}
+
+@media (max-width:776px) {
+    .produtos {padding: 40px 0;}
+    .tituloEbook {font-size: 29px;max-width: 720px;margin: 0 auto;}
+    .produtos h2 {font-size: 34px}
+    .produtos .textoProdutos {font-size: 19px;}
+    .textoLinhas {max-width: 480px;font-size: 16px;margin: 40px auto;}
+    .receitasEbook p {
+        transform: none;
+        position: static;
+        opacity: 1 !Important;
+        background: #020001 url(img/fundo-cafe.jpg) no-repeat fixed center bottom;
+        width: 100%;
+        max-width: 100%;
+        font-size: 20px;
+        padding: 30px 20px;
+    }
+    .newsletter {margin: 25px auto 70px;}
+}
+
+@media (max-width:745px) {
+    .imgFaixa {position: absolute;top: -68%;}
+}
+
+@media (max-width:700px) {
+    .newsletter {width: 380px;}
+    .newsletter p {font-size: 16.8px;}
+    .newsletter button{font-size: 15px;padding: 7px 10px;}
+    .logoFooter {width: 240px}
+    .menuFooter ul li a, .menuFooter .divisoria {font-size: 13px;}
+}
+
+@media (max-width:620px) {
+    .logo {width: 150px}
+    .tituloPersonalizado h2, .contato h2, .blogHome h2{font-size: 26px;}
+    .linhas {flex-wrap: wrap;}
+    .linhas .itemLinha {width: 50%;}
+    
+    .imgFaixa {position: absolute;top: -27%;}
+    .itemProduto{width: 100%}
+    
+    .gruposForm{
+        flex-direction: column;
+    }
+    .grupo1, .grupo2{
+        width: 100%;
+    }
+    
+    .gruposForm input:last-child{margin-bottom: 20px}
+    .gruposForm textarea{min-height: 100px;}
+    .gruposForm .fake{display: none}
+    .desenvolvido{font-size: 11px;}
+    .desenvolvido img{width: 100px;}
+    .infoContato{font-size: 14px;}
+    
+    .tituloEbook {font-size: 27px;max-width: 443px;margin: 0 auto;}
+    .produtos h2 {font-size: 34px}
+    .produtos .textoProdutos {font-size: 19px;}
+    .textoLinhas {max-width: 480px;font-size: 16px;margin: 40px auto;}
+    .receitasEbook p {
+        transform: none;
+        position: static;
+        opacity: 1 !Important;
+        background: #020001 url(img/fundo-cafe.jpg) no-repeat fixed center bottom;
+        width: 100%;
+        max-width: 100%;
+        font-size: 20px;
+        padding: 30px 20px;
+    }
+    .newsletter {margin: 25px auto 70px;}
+}
+
+@media (max-width:540px) {
+    .produtos h2 {
+        font-size: 26px;
+    }
+    .produtos .textoProdutos {
+        font-size: 16px;
+    }
+    .textoLinhas {
+        font-size: 15px;
+    }
+    .receitasEbook p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width:530px) {
+    footer {padding: 40px 0 0}
+    .newsletter {width: 310px;}
+    .newsletter p {font-size: 13.8px;}
+    .newsletter button{font-size: 12px;padding: 7px 10px;    max-width: 190px;}
+    .logoFooter {width: 200px}
+    .menuFooter ul li a, .menuFooter .divisoria {font-size: 8px;}
+    .textoLinhas {max-width: 318px;font-size: 14px;}
+}
+
+@media (max-width:500px) {
+    .logoTopo{display:none}
+    .sociaisTopo {justify-content: flex-end;}
+    header {padding: 15px 0;}
+    .control-nav {top: -22px;}
+}
+
+@media (max-width:450px) {
+    .imgFaixa {position: absolute;top: -27%;}
+    .logoFooter {
+        margin-bottom: 25px;
+    }
+    .newsletter {
+        margin: 25px auto 45px;
+    }
+    .menuFooter ul li, .menuFooter .divisoria {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .infoContato {
+        font-size: 13px;
+        max-width: 300px;
+        margin: 5px auto;
+    }
+    
+    .rodape {
+        padding: 20px 0;
+    }
+    
+    .infoRodape .maxPg {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .redesSociais, .direitos, .desenvolvido{width: 100%;text-align: center;margin: 3px 0}
+    .desenvolvido img {
+        display: initial;
+        margin: 0;
+    }
+}
+
+@media (max-width:415px) {
+    .newsletter {width: 250px;}
+    .newsletter p {font-size: 11px;}
+    .newsletter button{font-size: 11px;padding: 7px 10px;max-width: 170px;}
+    .logoFooter {width: 150px}
+    .menuFooter ul li a, .menuFooter .divisoria {font-size: 8px;}
+    .receitasEbook p {
+    font-size: 16px;
+}
+}

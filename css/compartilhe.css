@@ -1,0 +1,69 @@
+.grupoCompartilhe{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.txtCompartilhe{
+    margin: 0 0 10px !Important;
+    padding: 0 !Important;
+    font-size: 20px;
+}
+
+.grupoCompartilhe a{
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #80000f;
+    border: 1px solid #80000f;
+    color: #ffffff !Important;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+    font-size: 20px;
+    text-decoration: none !Important;
+}
+
+.grupoCompartilhe a .fa{
+    color: #ffffff !Important;
+}
+
+a.compGeral{
+    display: none;
+}
+
+a.compWhats{
+    background-color: #00e676;
+    border: 1px solid #00e676;
+}
+
+a.compLink{
+    background-color: #0274b3;
+    border: 1px solid #0274b3;
+}
+
+a.compFace{
+    background-color: #4267b2;
+    border: 1px solid #4267b2;
+}
+
+
+.grupoCompartilhe a:hover{
+    color: #80000f !Important;
+    background-color: transparent;
+}
+
+a.compWhats:hover, a.compWhats:hover > .fa{
+    color: #00e676 !Important;
+    font-weight: bold;
+}
+
+a.compLink:hover, a.compLink:hover > .fa{
+    color: #0274b3 !Important;;
+}
+
+a.compFace:hover, a.compFace:hover > .fa{
+    color: #4267b2 !Important;
+}

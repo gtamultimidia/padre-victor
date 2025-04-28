@@ -1,0 +1,7 @@
+[20-Jul-2018 11:14:00] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1' in /home/tanogosto/public_html/Funcoes/Painel.php:263
+Stack trace:
+#0 /home/tanogosto/public_html/Funcoes/Painel.php(263): PDOStatement->execute()
+#1 /home/tanogosto/public_html/painel/pages/receita-adicionar.php(5): Painel->insereReceita()
+#2 {main}
+  thrown in /home/tanogosto/public_html/Funcoes/Painel.php on line 263
+[20-Jul-2018 11:16:59] PHP Fatal error:  Cannot redeclare Painel::remover_caracter() in /home/tanogosto/public_html/Funcoes/Painel.php on line 613

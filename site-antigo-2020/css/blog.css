@@ -1,0 +1,239 @@
+/*Notícias Home*/
+
+.blog_home *{
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+}
+
+.blog_home .col-md-6{
+    padding: 5px;
+}
+    
+.blog_home{
+    max-width: 98%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.col-md-6 {
+    width: 50%;
+    float: left;
+}
+
+.item_blog_home{
+    width: 100%;
+    max-width: 500px;
+    margin: 10px auto 30px;
+}
+
+.miniaturaBlog{
+    width: 150px;
+    max-height: 150px;
+    overflow: hidden;
+    display: -webkit-inline-box;
+    float: left;
+    margin-right: 10px;
+}
+.item_blog_home img{
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.blog_home h2{
+    width: 100%;
+    height: 63px;
+    padding-top: 25px;
+    padding-left: 10px;
+    float: left;
+    font-weight: bold;
+    text-align: center;
+    color: #42afbb;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.item_blog_home h3{
+    text-align: justify;
+    margin: 5px 0;
+    color: #5c5d5f;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.item_blog_home p{
+    text-align: justify;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #5c5d60;
+    text-align: justify;
+    font-size: 14px;
+}
+
+.corpoBlog{
+    display: flex;
+    flex-direction: row;
+/*    flex-wrap: wrap;*/
+    position: relative;
+}
+
+.miniaturaBlog{
+    width: 150px;
+    min-width: 150px;
+}
+
+.conteudoBlog{
+    width: 100%;
+}
+
+.flutuanteTexto{
+    position: absolute;
+    bottom: 0;
+}
+
+/*NOTÍCIA*/
+
+.blog{
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+
+.blog img{
+    max-width: 100%;
+    height: auto;
+}
+
+.blog *{
+    text-align: center;
+    overflow: hidden;
+}
+
+.blog .dataBlog{
+    text-align: right;
+}
+
+.imagemCapa{
+    margin-bottom: 20px;
+}
+
+.blog p{
+    text-align: justify;
+}
+
+.botaoSaibaMais{
+    width: 100px;
+    display: block;
+    margin: 0 auto;
+    background-color: #212d3b;
+    color: white !Important;
+    margin-top: 10px;
+    padding: 3px 0px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.botaoVerTodas {
+    width: 100%;
+    text-align: right;
+    display: block;
+    margin-right: 22px;
+    padding-right: 10px;
+}
+
+.compartilhar{
+    margin-top: 20px;
+    display: block;
+}
+
+.textoBlogPg{
+    font-size: 16px;
+}
+
+
+/*TODAS NOTÍCIAS*/
+
+.todasBlog{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.todasBlog .blogMenor{
+    width: 100%;
+}
+
+.todasBlog .itemBlog{
+    width: 33.333%;
+}
+
+/*
+.divPaginacao{text-align:center;margin-top:20px}
+ul.paginacao{padding:0;display:inline-block;margin:0 auto}
+ul.paginacao li{list-style-type:none;float:left;margin:0 3px 5px}
+ul.paginacao li a{padding:10px;background-color:#0059ab;color:#fff;text-decoration:none;line-height:1;display:block;font-family:'calibri_bold','Arvo';font-size:14px}
+ul.paginacao li.ativo a,ul.paginacao li a:hover{background-color:transparent;color:#0059ab}
+ul.paginacao li.ativo a{cursor:no-drop}
+ul.paginacao li.desativado a{cursor:no-drop!important;background-color:transparent!important;color:rgba(128,128,128,0.55)!important}
+*/
+
+/*TAGS*/
+
+.tags{
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+}
+
+.tags a{
+    display: block;
+    margin-right: 10px;
+    background-color: #302418;
+    color: white !Important;
+    margin-top: 10px;
+    padding: 5px 7px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+
+@media (max-width:1400px) {
+    .blogMaior .corpoBlog {
+        padding: 25px;
+    }
+    .blogMaior h3 {
+        font-size: 20px;
+    }
+    .blogMaior p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width:991px) {
+    .blog_home .col-md-6{
+        width: 100%;
+    }
+}
+
+@media (max-width:800px) {
+    .blogHome{
+        flex-direction: column;
+    }
+    .blogMaior, .blogMenor{
+        width: 100%;
+    }
+}
+
+@media (max-width:730px) {
+    .todasBlog .itemBlog{
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .todasBlog .blogMenor .linha1, .todasBlog .blogMenor .linha2{
+        flex-direction: column;
+    }
+}
